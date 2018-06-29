@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7U3-eT-DV1">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animate Launch Screen View Controller-->
+        <scene sceneID="En3-Rp-baV">
+            <objects>
+                <viewController id="7U3-eT-DV1" customClass="AnimateLaunchScreenViewController" customModule="pdf_viewer_dilltrust" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bBF-lz-k6Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ox7-0L-HX8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZK0-Zt-shF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="O2q-iy-qqV">
+                                <rect key="frame" x="135" y="144" width="105" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="5LB-jr-Hmb"/>
+                                    <constraint firstAttribute="width" secondItem="O2q-iy-qqV" secondAttribute="height" multiplier="1:1" id="rt7-7R-mZz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover how to share and use PDF in working team " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H8E-jg-tVA">
+                                <rect key="frame" x="46" y="359" width="283" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.6588235294" green="0.70588235290000001" blue="0.76862745099999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PDF Viewer Dilitrust" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0B-4W-1Zo">
+                                <rect key="frame" x="76" y="289" width="222" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="0.28235294119999998" green="0.3294117647" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="XBk-bT-pfw">
+                                <rect key="frame" x="177" y="449.66666666666669" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="O2q-iy-qqV" firstAttribute="centerX" secondItem="ZK0-Zt-shF" secondAttribute="centerX" id="4KL-pX-7XZ"/>
+                            <constraint firstItem="XBk-bT-pfw" firstAttribute="top" secondItem="H8E-jg-tVA" secondAttribute="bottom" constant="50" id="6To-5R-10a"/>
+                            <constraint firstItem="d0B-4W-1Zo" firstAttribute="top" secondItem="O2q-iy-qqV" secondAttribute="bottom" constant="40" id="AAg-ZE-Klk"/>
+                            <constraint firstItem="O2q-iy-qqV" firstAttribute="top" secondItem="bBF-lz-k6Z" secondAttribute="bottom" constant="100" id="bsa-6E-Hzy"/>
+                            <constraint firstItem="H8E-jg-tVA" firstAttribute="leading" secondItem="ZK0-Zt-shF" secondAttribute="leadingMargin" constant="30" id="dlQ-9z-Nel"/>
+                            <constraint firstItem="XBk-bT-pfw" firstAttribute="centerX" secondItem="ZK0-Zt-shF" secondAttribute="centerX" id="eAa-98-APV"/>
+                            <constraint firstItem="d0B-4W-1Zo" firstAttribute="centerX" secondItem="ZK0-Zt-shF" secondAttribute="centerX" id="lWB-Ga-W7n"/>
+                            <constraint firstItem="H8E-jg-tVA" firstAttribute="top" secondItem="d0B-4W-1Zo" secondAttribute="bottom" constant="40" id="sb4-oi-wcO"/>
+                            <constraint firstItem="O2q-iy-qqV" firstAttribute="width" secondItem="O2q-iy-qqV" secondAttribute="height" multiplier="1:1" id="z1p-AM-mhf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H8E-jg-tVA" secondAttribute="trailing" constant="30" id="z4a-dN-AWh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loading" destination="XBk-bT-pfw" id="R0M-jb-arj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eGp-lX-Wln" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="70" height="70"/>
+    </resources>
+</document>
